@@ -47,7 +47,8 @@
 		var academics=[]
 		academics.push(pre_academics);
 		academics.push({ug:btech});
-		alert(JSON.stringify(academics));
+		//alert(JSON.stringify(academics));
+		return true;
 		
 		
 	}
@@ -97,7 +98,7 @@
 			Form</a>
 	</div>
 	<center>
-		<form name="Year_Sem_Form" onsubmit='getDetails()'  >
+		<form name="Year_Sem_Form" onsubmit='return getDetails()' action="sub_after.html" method="get"  >
 			<fieldset>
 				<legend><h2>Previous Education Deatils</h2></legend>
 				<h3>Tenth Class:</h3>
